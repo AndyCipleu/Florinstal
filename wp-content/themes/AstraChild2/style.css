@@ -1,0 +1,343 @@
+/*
+ Theme Name: AstraChild2
+ Template: Astra
+ Author: Andy 
+ Description: Tema hijo para personalización.
+ Version: 1.0.0
+*/
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.custom-navbar {
+    background-color: #fff;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 4%;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Suaviza el cambio de opacidad */
+    z-index: 1000;
+}
+
+.custom-navbar.scrolled {
+    opacity: 0.9;
+}
+
+
+
+.navbar-logo img {
+    width: 3rem;
+    height: auto;
+    order: 3;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-title {
+    flex: 1;
+    text-align: center;
+}
+
+.nombre-pagina {
+    margin: 0;
+}
+.navbar-menu-container {
+    margin-top: 10px ;
+}
+.navbar-languages-container {
+    margin-top: 10px ;
+}
+
+.navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:92%;
+    width: 10%;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.navbar-languages {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:96%;
+    width: auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.navbar-menu-list,
+.navbar-languages-list {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+}
+
+.navbar-menu-list li,
+.navbar-languages-list li {
+    display: flex;
+}
+
+.navbar-menu-list a,
+.navbar-languages-list a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-menu-list a:hover,
+.navbar-languages-list a:hover {
+    color: #00bfff;
+}
+
+.navbar-languages {
+    margin-left: 20px;
+    transition: 0.1s ease;
+}
+
+.navbar-toggle {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    transition: 0.1s ease;
+    width: 50px;
+}
+
+.navbar-toggle:hover {
+    background-color: #ffffff;
+}
+
+.navbar-menu.show,
+.navbar-languages.show {
+    display: block;
+}
+
+
+.navbar-toggle:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: inherit; /* Mantener el fondo actual */
+}
+
+
+/* Submenús */
+.navbar-menu-list li ul,
+.navbar-languages-list li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 5px 0;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+    width: auto;
+    min-width: 150px;
+}
+
+.navbar-menu-list li ul li,
+.navbar-languages-list li ul li {
+    padding: 5px;
+}
+
+.navbar-menu-list li ul a,
+.navbar-languages-list li ul a {
+    text-decoration: none;
+    color: #fdfdfd;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu-list li ul a:hover,
+.navbar-languages-list li ul a:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.navbar-menu-list li:hover > ul,
+.navbar-languages-list li:hover > ul {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    
+    .navbar-languages {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    
+    .custom-navbar {
+        background-color: #fff;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: sticky;
+        top: 0%;
+        transition: background-color 0.3s ease, opacity 0.3s ease; /* Suaviza el cambio de opacidad */
+        z-index: 1000;
+    }
+    .navbar-menu-container {
+        margin-top: 10px ;
+    }
+    .navbar-languages-container {
+        margin-top: 10px ;
+    }
+
+    .navbar-toggle {
+      width: 45px;
+    }
+    
+    .navbar-logo img {
+        width: 2.5rem;
+        height: auto;
+        order: 3;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+
+    .navbar-languages {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+
+    .custom-navbar {
+        background-color: #fff;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: sticky;
+        top: 0%;
+        transition: background-color 0.3s ease, opacity 0.3s ease; /* Suaviza el cambio de opacidad */
+        z-index: 1000;
+    }
+
+    .navbar-menu-list a,
+    .navbar-languages-list a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 30px;
+        padding: 10px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1025px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+
+    .navbar-languages {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        opacity: 0.9;
+    }
+
+    .custom-navbar {
+        background-color: #fff;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: sticky;
+        top: 0%;
+        transition: background-color 0.3s ease, opacity 0.3s ease; /* Suaviza el cambio de opacidad */
+        z-index: 1000;
+    }
+}

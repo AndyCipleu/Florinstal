@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sin categoría &#8211; FLORINSTAL</title>
+	<atom:link href="/ro/category/sin-categoria/feed/" rel="self" type="application/rss+xml" />
+	<link>/ro</link>
+	<description></description>
+	<lastbuilddate>Wed, 22 May 2024 19:26:02 +0000</lastbuilddate>
+	<language>ro-RO</language>
+	<sy:updateperiod>
+	hourly	</sy:updateperiod>
+	<sy:updatefrequency>
+	1	</sy:updatefrequency>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2024/12/FLORINSTALOGO512-2.png</url>
+	<title>Sin categoría &#8211; FLORINSTAL</title>
+	<link>/ro</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>¡Hola, mundo!</title>
+		<link>/ro/hola-mundo/</link>
+					<comments>/ro/hola-mundo/#comments</comments>
+		
+		<dc:creator><![CDATA[Andy]]></dc:creator>
+		<pubdate>Wed, 22 May 2024 19:26:02 +0000</pubdate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid ispermalink="false">/?p=1</guid>
+
+					<description><![CDATA[Te damos la bienvenida a WordPress. Esta es tu primera entrada. Edítala o bórrala, ¡luego empieza a escribir!]]></description>
+										<content:encoded><![CDATA[<p>Te damos la bienvenida a WordPress. Esta es tu primera entrada. Edítala o bórrala, ¡luego empieza a escribir!</p>]]></content:encoded>
+					
+					<wfw:commentrss>/ro/hola-mundo/feed/</wfw:commentrss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
